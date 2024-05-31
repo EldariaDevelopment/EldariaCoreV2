@@ -11,6 +11,7 @@ public class Eldaria extends JavaPlugin {
     public void onEnable() {
         // Plugin startup logic
         plugin = this;
+        instance = this;
 
         getConfigHandler().getConfig().set("potato", 2);
         getConfigHandler().saveConfig();
@@ -29,5 +30,9 @@ public class Eldaria extends JavaPlugin {
 
     public static ConfigHandler getConfigHandler() {
         return new ConfigHandler(plugin);
+    }
+    //get instance / plugin
+    public static Eldaria GetInstance(){
+        return instance;
     }
 }
