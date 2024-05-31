@@ -23,7 +23,7 @@ public class AddHandItemToData implements CommandExecutor {
         ItemStack itemInHand = player.getInventory().getItemInMainHand();
         if (itemInHand == null || itemInHand.getType().isAir()) {
             player.sendMessage("You must hold an item in your main hand to use this command.");
-
+//potato
             return true;
         }
 
