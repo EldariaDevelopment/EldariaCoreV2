@@ -1,0 +1,11 @@
+name: Eldaria
+version: '${project.version}'
+main: e.eldaria.Eldaria
+api-version: '1.20'
+prefix: Eldaria
+authors: [Makenna]
+description: The Eldaria Plugin
+commands:
+  AddData:
+    description: Adds to file
+    usage: /<command>
